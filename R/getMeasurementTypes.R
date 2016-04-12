@@ -1,6 +1,6 @@
 #' Get Measurement Types
 #' 
-#' Retrieves a \code{data.frame} of measurement types available from Youtheria.
+#' Retrieves a \code{data.frame} of measurement types available from YouTheria.
 #' 
 #' @param measurementType If \code{NULL} (default), then all measurement types are
 #'        returned. Can also be 'numeric' or 'character' (or a list of either type)
@@ -8,6 +8,7 @@
 #' @return A dataframe of measurement types giving their Id and Name        
 #' @export
 #' @examples
+#' \dontrun{
 #' # Get a dataframe of all measurement types
 #' AllMT <- getMeasurementTypes()
 #' 
@@ -18,6 +19,7 @@
 #' # Search by ID
 #' MT1 <- getMeasurementTypes(1)
 #' MT123 <- getMeasurementTypes(1:3)
+#' }
 
 getMeasurementTypes <-
 function(measurementType = NULL){
